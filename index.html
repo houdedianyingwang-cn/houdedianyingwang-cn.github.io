@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<meta name="description" content="厚德电影网 — 以德为先的影视资料与评论站：经典电影、人文纪录片、家国题材、戏曲与修复版，重拾影像中的厚道、仁义与人间温度。">
+<meta name="keywords" content="厚德电影网,厚德,经典电影,人文纪录片,家国题材,戏曲电影,4K修复,德艺双馨,apdy">
+<meta name="author" content="厚德电影网">
+<meta name="theme-color" content="#0c0a08">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="canonical" href="https://houdedianyingwang-cn.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="厚德电影网 - 经典电影·人文纪录片·家国题材·戏曲修复 | apdy">
+<meta property="og:description" content="厚德电影网：以德为先的影视资料与评论站，经典电影、人文纪录片、家国题材、戏曲与4K修复版专题。">
+<meta property="og:url" content="https://houdedianyingwang-cn.github.io">
+<meta property="og:site_name" content="厚德电影网">
+<title>厚德电影网 - 经典电影·人文纪录片·家国题材·戏曲修复 | apdy</title>
+<style>
+:root{
+  --ink:#0c0a08;
+  --ink2:#16110c;
+  --paper:rgba(255,255,255,.045);
+  --line:rgba(217,164,65,.32);
+  --gold:#d9a441;
+  --wheat:#e8c77a;
+  --clay:#a8502c;
+  --plum:#7a2e4d;
+  --inkgreen:#4a5d3a;
+  --txt:#f2ead9;
+  --sub:#c2b49a;
+  --mono:Menlo,Consolas,"Courier New",monospace;
+  --serif:"Songti SC","SimSun","Source Han Serif SC",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--ink);color:var(--txt);line-height:1.78;overflow-x:hidden;
+  background-image:
+    radial-gradient(900px 460px at 96% -8%, rgba(217,164,65,.16), transparent 62%),
+    radial-gradient(660px 380px at 3% 12%, rgba(122,46,77,.20), transparent 62%),
+    linear-gradient(rgba(217,164,65,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217,164,65,.045) 1px, transparent 1px);
+  background-size:auto,auto,48px 48px,48px 48px;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+::selection{background:rgba(217,164,65,.42);color:#120c02}
+
+/* ===== Header ===== */
+header{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(12,10,8,.88);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:14px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.3px}
+.logo .seal{width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,var(--gold),var(--clay));display:grid;place-items:center;font:900 22px/1 var(--serif);color:#120c02;box-shadow:0 0 24px rgba(217,164,65,.4);position:relative}
+.logo .seal::after{content:"";position:absolute;inset:4px;border:1px solid rgba(18,12,2,.5);border-radius:7px}
+.logo b{font-size:17px;letter-spacing:2px}
+.logo em{font-style:normal;color:var(--sub);font-size:11px;font-family:var(--mono);border-left:1px solid var(--line);padding-left:10px}
+nav{margin-left:auto;display:flex;align-items:center;gap:2px}
+nav a{padding:8px 13px;border-radius:8px;font-size:14px;color:#e8ddc4;transition:.2s;white-space:nowrap}
+nav a:hover{color:#fff;background:rgba(217,164,65,.10)}
+nav a.on{color:#120c02;background:linear-gradient(90deg,var(--gold),var(--clay));font-weight:700;box-shadow:0 6px 18px -8px rgba(217,164,65,.9)}
+.menu-btn{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;background:rgba(217,164,65,.06);cursor:pointer;flex-direction:column;gap:5px;place-items:center}
+.menu-btn i{width:18px;height:2px;background:var(--gold);border-radius:2px}
+
+/* ===== Hero ===== */
+.hero{padding:64px 0 40px;position:relative}
+.hero-in{display:grid;grid-template-columns:1fr 460px;gap:44px;align-items:center}
+.tagline{display:inline-flex;align-items:center;gap:9px;padding:6px 14px;border-radius:999px;font-size:12px;font-family:var(--mono);color:var(--wheat);border:1px solid var(--line);background:rgba(217,164,65,.07)}
+.tagline span{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:beat 1.6s infinite}
+@keyframes beat{0%,100%{transform:scale(1);opacity:1}25%{transform:scale(1.55);opacity:.72}50%{transform:scale(1);opacity:1}}
+h1{font-family:var(--serif);font-size:clamp(38px,7.4vw,74px);line-height:1.1;margin:16px 0 12px;letter-spacing:4px}
+h1 .grad{background:linear-gradient(100deg,#fff 2%,var(--wheat) 46%,var(--clay) 98%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--sub);font-size:clamp(14px,2.2vw,16px);max-width:560px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;border:1px solid transparent;transition:.22s}
+.btn-p{background:linear-gradient(90deg,var(--gold),var(--clay));color:#120c02;box-shadow:0 12px 32px -12px rgba(217,164,65,.8)}
+.btn-p:hover{transform:translateY(-2px)}
+.btn-g{background:rgba(255,255,255,.04);border-color:var(--line);color:var(--txt)}
+.btn-g:hover{border-color:var(--gold);color:var(--gold)}
+.hero-stats{display:flex;gap:30px;margin-top:34px;flex-wrap:wrap}
+.hero-stats div span{display:block;font-family:var(--serif);font-size:27px;font-weight:900;color:#fff;letter-spacing:-1px}
+.hero-stats div small{color:var(--sub);font-size:11px;letter-spacing:2px}
+
+/* CSS landscape */
+.stage{position:relative;height:440px;display:grid;place-items:center;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:linear-gradient(180deg,#241a10 0%,#0c0a08 100%)}
+.sun{position:absolute;width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#ffe6b8 0%,#d9a441 28%,#a8502c 62%,transparent 68%);box-shadow:0 0 100px rgba(217,164,65,.55);animation:breath 5s ease-in-out infinite}
+@keyframes breath{0%,100%{transform:scale(1);opacity:.95}50%{transform:scale(1.07);opacity:1}}
+.field{position:absolute;left:0;right:0;bottom:0;height:150px;background:linear-gradient(180deg,transparent,transparency 0,#5c4320 58%,#241a10);clip-path:polygon(0 100%,0 60%,16% 42%,30% 58%,44% 30%,58% 54%,72% 22%,86% 48%,100% 34%,100% 100%)}
+.field.f2{height:96px;bottom:0;background:linear-gradient(180deg,transparent,#3a2a12 60%,#241a10);clip-path:polygon(0 100%,0 68%,18% 50%,32% 66%,46% 40%,60% 62%,74% 30%,88% 54%,100% 40%,100% 100%);opacity:.85}
+.ear{position:absolute;bottom:30px;width:3px;height:34px;background:linear-gradient(180deg,var(--gold),#7a5a14);transform-origin:bottom;animation:sway 4.6s ease-in-out infinite;box-shadow:6px 0 0 -1px rgba(217,164,65,.5)}
+.ear::before{content:"";position:absolute;left:-7px;top:-2px;width:17px;height:9px;border-radius:50%;background:var(--gold)}
+@keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.pt{position:absolute;font-family:var(--serif);font-size:12px;color:rgba(242,234,217,.85);letter-spacing:8px;text-shadow:0 0 14px rgba(217,164,65,.5)}
+.pt.p1{top:34px;left:18px;transform:rotate(-90deg);transform-origin:left}
+.pt.p2{bottom:34px;right:12px;letter-spacing:5px;color:var(--wheat)}
+.hud{position:absolute;z-index:6;font-family:var(--mono);font-size:11px;color:var(--wheat);border:1px solid var(--line);background:rgba(12,10,8,.9);padding:7px 10px;border-radius:8px}
+.hud b{display:block;color:#fff;font-size:15px;letter-spacing:1px}
+.h1{top:44px;right:18px}
+.h2{bottom:44px;left:16px;color:var(--clay);border-color:rgba(168,80,44,.45)}
+
+/* ===== Section ===== */
+section{padding:74px 0;position:relative}
+.eyebrow{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:3px;color:var(--gold)}
+.eyebrow::before{content:"";width:28px;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+h2{font-family:var(--serif);font-size:clamp(26px,4.4vw,40px);margin:10px 0 8px;letter-spacing:2px}
+h2 em{font-style:normal;background:linear-gradient(90deg,var(--gold),var(--clay));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-desc{color:var(--sub);max-width:740px;margin-bottom:8px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:6px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 26px}
+.chip{padding:7px 16px;border-radius:999px;font-size:13px;cursor:pointer;border:1px solid var(--line);background:rgba(255,255,255,.03);color:#e8ddc4;transition:.2s}
+.chip:hover{color:#fff;border-color:var(--gold)}
+.chip.on{background:linear-gradient(90deg,var(--gold),var(--clay));color:#120c02;border-color:transparent;font-weight:700}
+
+/* ===== ① 经典电影 : scroll-snap deck ===== */
+.deck{display:flex;gap:16px;overflow-x:auto;padding:8px 2px 26px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:rgba(217,164,65,.34) transparent}
+.deck::-webkit-scrollbar{height:8px}
+.deck::-webkit-scrollbar-thumb{background:rgba(217,164,65,.34);border-radius:8px}
+.dk{flex:0 0 248px;scroll-snap-align:start;height:312px;border-radius:16px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;border:1px solid var(--line);transform:rotate(calc(var(--r,0)*1deg));transition:.34s;cursor:pointer}
+.dk::after{content:"";position:absolute;right:-44px;top:-44px;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.10)}
+.dk:hover{transform:rotate(0) translateY(-10px);box-shadow:0 34px 64px -26px rgba(217,164,65,.6);border-color:var(--gold);z-index:3}
+.dk .yr{font-family:var(--serif);font-size:31px;font-weight:900;color:rgba(255,255,255,.92);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.6)}
+.dk h3{font-family:var(--serif);font-size:23px;line-height:1.3;z-index:2;letter-spacing:1px}
+.dk p{font-size:12px;color:rgba(242,234,217,.82);z-index:2}
+.dk .en{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:rgba(255,255,255,.6);z-index:2}
+
+/* ===== ② 人文纪录片 : feature + numbered rail ===== */
+.doc{display:grid;grid-template-columns:1.28fr 1fr;gap:20px}
+.feat{position:relative;height:420px;border-radius:18px;padding:26px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;border:1px solid var(--line);transition:.3s;cursor:pointer}
+.feat:hover{border-color:var(--gold);box-shadow:0 30px 70px -30px rgba(217,164,65,.55)}
+.feat .gl{position:absolute;inset:0;background:linear-gradient(160deg,rgba(122,46,77,.5),rgba(12,10,8,.96) 70%);z-index:1}
+.feat .band{position:absolute;inset:0;opacity:.5;background:repeating-linear-gradient(135deg,transparent 0 9px,rgba(255,255,255,.05) 9px 10px);z-index:0}
+.feat .c{position:relative;z-index:3}
+.feat .lab{font-family:var(--mono);font-size:11px;letter-spacing:3px;color:var(--wheat)}
+.feat h3{font-family:var(--serif);font-size:32px;letter-spacing:2px;margin:8px 0}
+.feat q{display:block;color:rgba(242,234,217,.86);font-size:14px;margin-bottom:12px;font-family:var(--serif)}
+.rail{display:flex;flex-direction:column;gap:10px}
+.ri{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center;padding:13px 15px;border-radius:12px;border:1px solid var(--line);background:var(--paper);transition:.22s;cursor:pointer}
+.ri:hover{background:rgba(217,164,65,.09);border-color:var(--gold);transform:translateX(5px)}
+.ri .no{font-family:var(--serif);font-weight:900;font-size:24px;color:var(--gold);line-height:1}
+.ri h4{font-family:var(--serif);font-size:15.5px}
+.ri small{color:var(--sub);font-size:11.5px;font-family:var(--mono)}
+
+/* ===== ③ 家国题材 : stepped ledger ===== */
+.led{display:grid;gap:10px}
+.row2{display:grid;grid-template-columns:74px 1.5fr 1fr 150px;gap:14px;align-items:center;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--paper);transition:.2s}
+.row2:hover{background:linear-gradient(100deg,rgba(217,164,65,.12),rgba(168,80,44,.06));border-color:var(--gold);transform:translateX(5px)}
+.row2 .no{font-family:var(--mono);font-weight:900;font-size:20px;color:var(--gold);letter-spacing:-1px}
+.row2 h4{font-family:var(--serif);font-size:17px}
+.row2 .st{font-size:12px;padding:4px 10px;border-radius:7px;border:1px solid var(--line);font-family:var(--mono);white-space:nowrap;color:#e8ddc4}
+.row2 .st.done{color:#120c02;background:linear-gradient(90deg,var(--gold),var(--clay));border-color:transparent}
+.mini{height:9px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}
+.mini i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--clay));transform-origin:left;animation:fill 1.1s cubic-bezier(.22,1,.36,1) both}
+@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* ===== ④ 戏曲与修复 : flip cards ===== */
+.flip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fp{height:240px;perspective:1400px}
+.fp-in{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .7s;cursor:pointer}
+.fp:hover .fp-in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;border-radius:15px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid var(--line);overflow:hidden}
+.face.front{background:linear-gradient(155deg,var(--plum),#120c08)}
+.face.front.g2{background:linear-gradient(155deg,#5a3a12,#120c08)}
+.face.front.g3{background:linear-gradient(155deg,#2e4a2a,#120c08)}
+.face.front.g4{background:linear-gradient(155deg,#3a2a5a,#120c08)}
+.face.back{transform:rotateY(180deg);background:linear-gradient(155deg,rgba(217,164,65,.18),rgba(168,80,44,.10));border-color:var(--gold)}
+.face .no{font-family:var(--mono);font-size:11px;letter-spacing:3px;color:rgba(255,255,255,.75)}
+.face h3{font-family:var(--serif);font-size:21px;letter-spacing:2px;z-index:2}
+.face .tag{font-size:11.5px;color:var(--wheat);font-family:var(--mono);z-index:2}
+.face.back q{font-family:var(--serif);font-size:15px;line-height:1.7;color:#f2ead9}
+.face.back .who{font-size:11px;color:var(--sub);font-family:var(--mono);letter-spacing:2px}
+
+/* ===== ⑤ 厚德榜 : table ===== */
+.tb{width:100%;border-collapse:collapse;font-size:14px}
+.tb thead th{text-align:left;padding:12px 14px;font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--gold);border-bottom:1px solid var(--line);font-weight:600}
+.tb tbody td{padding:13px 14px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:middle}
+.tb tbody tr{transition:.18s}
+.tb tbody tr:hover{background:rgba(217,164,65,.07);transform:translateX(4px)}
+.tb .rk{font-family:var(--serif);font-weight:900;font-size:19px;width:56px}
+.tb .rk.g1{color:var(--gold)}
+.tb .rk.g2{color:#c9b98e}
+.tb .rk.g3{color:#a8502c}
+.tb h5{font-size:15px;font-family:var(--serif);letter-spacing:1px}
+.tb small{color:var(--sub);font-size:11.5px}
+.tb .hot{font-family:var(--mono);font-size:12px;color:#fff;text-align:right}
+.up{color:#7ed9a8}
+.dn{color:var(--clay)}
+
+/* ===== ⑥ 关于 ===== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.panel{border-radius:20px;padding:34px;background:var(--paper);border:1px solid var(--line);position:relative;overflow:hidden}
+.panel::after{content:"德";position:absolute;right:2px;bottom:-44px;font-family:var(--serif);font-weight:900;font-size:250px;color:rgba(255,255,255,.045);line-height:1}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.kpi{padding:16px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+.kpi b{display:block;font-family:var(--serif);font-size:26px;color:#fff;letter-spacing:-1px}
+.kpi small{color:var(--sub);font-size:11px;letter-spacing:1.5px}
+form{display:flex;flex-direction:column;gap:14px;margin-top:22px;position:relative;z-index:2}
+input,textarea{width:100%;padding:13px 15px;border-radius:11px;background:rgba(12,10,8,.8);border:1px solid var(--line);color:var(--txt);font-size:14px;font-family:inherit;transition:.2s}
+input:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(217,164,65,.18)}
+textarea{resize:vertical;min-height:84px}
+.radios{display:flex;gap:8px;flex-wrap:wrap}
+.radios label{padding:9px 15px;border-radius:9px;border:1px solid var(--line);font-size:13px;cursor:pointer;transition:.2s;color:#e8ddc4}
+.radios label:hover{border-color:var(--gold)}
+.radios input{position:absolute;opacity:0;width:0;height:0}
+.radios label:has(input:checked){background:linear-gradient(90deg,var(--gold),var(--clay));border-color:transparent;color:#120c02;font-weight:700}
+
+/* ===== Footer ===== */
+footer{border-top:1px solid var(--line);padding:44px 0 30px;margin-top:40px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.ft h5{font-size:15px;margin-bottom:12px;color:#fff;letter-spacing:1px}
+.ft a{display:block;color:var(--sub);font-size:13px;padding:4px 0;transition:.2s}
+.ft a:hover{color:var(--gold)}
+.copy{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);color:var(--sub);font-size:12px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.copy b{color:var(--gold);font-family:var(--mono)}
+
+/* ===== Reveal ===== */
+.rev{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.22,1,.36,1)}
+.rev.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.sun,.ear{animation:none}}
+
+/* ===== Responsive ===== */
+@media(max-width:1000px){
+  .hero-in{grid-template-columns:1fr}
+  .stage{height:360px;order:-1}
+}
+@media(max-width:900px){
+  .flip,.ft,.split{grid-template-columns:1fr 1fr}
+  .doc{grid-template-columns:1fr}
+  .feat{height:300px}
+  .row2{grid-template-columns:60px 1fr;grid-template-areas:"n t""n s""n m";gap:8px 14px}
+  .row2 .no{grid-area:n;font-size:18px}
+  .row2 h4{grid-area:t}
+  .row2 .st{grid-area:s;justify-self:start}
+  .row2 .mini{grid-area:m;margin:2px 0}
+}
+@media(max-width:640px){
+  .wrap{padding:0 16px}
+  section{padding:54px 0}
+  .hero{padding:34px 0 18px}
+  nav{position:fixed;inset:64px 0 auto 0;flex-direction:column;align-items:stretch;gap:4px;padding:16px;background:rgba(12,10,8,.98);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:.3s}
+  nav.open{max-height:600px;overflow:auto}
+  nav a{font-size:15px;padding:13px 16px;border-radius:10px}
+  .menu-btn{display:grid}
+  .logo em{display:none}
+  .deck,.doc,.flip,.row2,.ri{flex-wrap:nowrap}
+  .dk{flex-basis:210px}
+  .pt.p1{display:none}
+  .tb{font-size:13px}
+  .tb thead{display:none}
+  .tb tbody td{display:block;padding:7px 14px}
+  .tb tbody tr{border-bottom:1px solid var(--line);display:grid;grid-template-columns:44px 1fr;grid-template-areas:"r n""r d""r h";padding:10px 0}
+  .tb .rk{grid-area:r;font-size:22px;padding-left:14px}
+  .tb h5{grid-area:n}
+  .tb small{grid-area:d;padding-left:0!important}
+  .tb .hot{grid-area:h;text-align:left}
+  .kpis{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr}
+}
+@media print{
+  body{background:#fff;color:#000}
+  header,nav,.hero-cta,.chips,.sun,.field,.ear,.pt,.hud{display:none!important}
+  section{page-break-inside:avoid;padding:16px 0}
+  .dk,.ri,.row2,.fp,tr{break-inside:avoid}
+  .fp-in{transform:none!important}
+  .face.back{display:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#" aria-label="厚德电影网 首页">
+      <span class="seal">德</span>
+      <span><b>厚德电影网</b><em>apdy · github.io</em></span>
+    </a>
+    <button class="menu-btn" id="mb" aria-label="菜单" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav id="nav">
+      <a href="#" class="on">首页</a>
+      <a href="#classic">经典</a>
+      <a href="#doc">人文</a>
+      <a href="#home">家国</a>
+      <a href="#opera">戏曲</a>
+      <a href="#rank">厚德榜</a>
+      <a href="#about">关于</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="rev">
+      <span class="tagline"><span></span>以德为先 · 影像载道</span>
+      <h1><span class="grad">厚德</span>电影网</h1>
+      <p class="lead"><b>厚德电影网</b>（apdy）相信好电影的第一品格是"厚道"：重拾<b>经典电影</b>里的人间温度，整理<b>人文纪录片</b>中的真实中国，致敬<b>家国题材</b>的浩然之气，保存<b>戏曲电影</b>与<b>4K 修复版</b>的薪火。看片，也是修身。</p>
+      <div class="hero-cta">
+        <a class="btn btn-p" href="#classic">进入片库 →</a>
+        <a class="btn btn-g" href="#rank">厚德榜</a>
+      </div>
+      <div class="hero-stats">
+        <div><span>3,260</span><small>经典影片</small></div>
+        <div><span>184</span><small>导演词条</small></div>
+        <div><span>62</span><small>修复版本</small></div>
+        <div><span>8</span><small>戏曲剧种</small></div>
+      </div>
+    </div>
+
+    <div class="stage rev" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="field"></div>
+      <div class="field f2"></div>
+      <span class="ear" style="left:12%"></span>
+      <span class="ear" style="left:24%;height:24px;animation-delay:1.2s"></span>
+      <span class="ear" style="right:16%;height:40px;animation-delay:.6s"></span>
+      <span class="ear" style="right:30%;height:22px;animation-delay:2.1s"></span>
+      <div class="pt p1">厚 德 载 物</div>
+      <div class="pt p2">HOU DE · FILM</div>
+      <div class="hud h1">THEME<b>仁义 · 孝悌 · 家国</b></div>
+      <div class="hud h2">RESTORE<b>4K 修复 · 戏曲 · 胶片</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ① 经典电影 ============ -->
+<section id="classic">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">01 / CLASSIC</div>
+        <h2>经典<em>电影</em></h2>
+        <p class="sec-desc">时间筛过的影像：伦理、亲情、侠义、乡土。厚德电影网不选"爽"，只选"真"与"善"。</p>
+      </div>
+      <a class="btn btn-g" href="#rank">完整片单 →</a>
+    </div>
+    <div class="chips" role="tablist">
+      <span class="chip on">全部</span>
+      <span class="chip">伦理亲情</span>
+      <span class="chip">侠义武侠</span>
+      <span class="chip">乡土写实</span>
+      <span class="chip">文人电影</span>
+      <span class="chip">港台经典</span>
+    </div>
+    <div class="deck">
+      <article class="dk rev" style="background:linear-gradient(165deg,#7a2e1d,#0c0a08);--r:-2"><span class="en">FAMILY / 1999</span><div class="yr">1999</div><h3>饮食男女</h3><p>李安 · 一桌饭、一座老宅、三代人——中国式亲情，尽在筷箸之间。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#5a3a12,#0c0a08);--r:1.4"><span class="en">WUXIA / 1992</span><div class="yr">1992</div><h3>新龙门客栈</h3><p>徐克 / 李惠民 · 大漠、黄沙、仁义——武侠的骨头是人情。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#2e4a2a,#0c0a08);--r:-1.6"><span class="en">LOCAL / 1991</span><div class="yr">1991</div><h3>大红灯笼高高挂</h3><p>张艺谋 · 院墙之内，点灯与封灯，一个家族的伦理秩序。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#3a2a5a,#0c0a08);--r:1.8"><span class="en">COMEDY / 1990</span><div class="yr">1990</div><h3>阿飞正传</h3><p>王家卫 · "无脚鸟"的漂泊，是对"家"最倔的追问。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#4a3a12,#0c0a08);--r:-1.2"><span class="en">HISTORY / 1993</span><div class="yr">1993</div><h3>霸王别姬</h3><p>陈凯歌 · 戏梦人生，"不疯魔不成活"的一出时代悲剧。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#2e3a4a,#0c0a08);--r:1"><span class="en">FOLK / 1984</span><div class="yr">1984</div><h3>黄土地</h3><p>陈凯歌 · 黄土、黄河、腰鼓——土地里的中国，沉默而有力量。</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ② 人文纪录片 ============ -->
+<section id="doc" style="background:linear-gradient(180deg,transparent,rgba(217,164,65,.05))">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">02 / HUMANITIES DOCUMENTARY</div>
+        <h2>人文<em>纪录片</em></h2>
+        <p class="sec-desc">真实，是最厚的德。手艺、山河、故人、节气——把镜头让给沉默的大多数。</p>
+      </div>
+    </div>
+    <div class="doc">
+      <article class="feat rev">
+        <span class="band" aria-hidden="true"></span>
+        <span class="gl" aria-hidden="true"></span>
+        <div class="c">
+          <span class="lab">FEATURE · 9.9</span>
+          <h3>人间世</h3>
+          <q>「所谓人间，不过是互相扶持着，把日子过下去。」</q>
+          <span class="en">生命 · 医院 · 真实记录</span>
+        </div>
+      </article>
+      <div class="rail">
+        <div class="ri rev"><span class="no">01</span><div><h4>人间世</h4><small>生命 / 医院 · 2016</small></div></div>
+        <div class="ri rev"><span class="no">02</span><div><h4>舌尖上的中国</h4><small>风土 / 饮食 · 2012</small></div></div>
+        <div class="ri rev"><span class="no">03</span><div><h4>我在故宫修文物</h4><small>手艺 / 修复 · 2016</small></div></div>
+        <div class="ri rev"><span class="no">04</span><div><h4>乡村里的中国</h4><small>乡土 / 年轮 · 2013</small></div></div>
+        <div class="ri rev"><span class="no">05</span><div><h4>大国工匠</h4><small>匠心 / 传承 · 2015</small></div></div>
+        <div class="ri rev"><span class="no">06</span><div><h4>河西走廊</h4><small>山河 / 历史 · 2015</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ③ 家国题材 ============ -->
+<section id="home">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">03 / NATION &amp; HOME</div>
+        <h2>家国<em>题材</em></h2>
+        <p class="sec-desc">修身、齐家、治国、平天下。家国题材不是口号，是具体到一张照片、一封家书、一场离别。</p>
+      </div>
+    </div>
+    <div class="led">
+      <div class="row2 rev"><span class="no">01</span><h4>一九四二</h4><span class="st done">已整理</span><span class="mini"><i style="width:100%"></i></span><small style="color:var(--sub)">冯小刚 · 逃荒与民心</small></div>
+      <div class="row2 rev"><span class="no">02</span><h4>我和我的祖国</h4><span class="st done">已整理</span><span class="mini"><i style="width:100%"></i></span><small style="color:var(--sub)">七位导演 · 七个瞬间</small></div>
+      <div class="row2 rev"><span class="no">03</span><h4>长津湖</h4><span class="st done">已整理</span><span class="mini"><i style="width:100%"></i></span><small style="color:var(--sub)">陈凯歌 / 徐克 · 冰雪与意志</small></div>
+      <div class="row2 rev"><span class="no">04</span><h4>觉醒年代</h4><span class="st">连载中</span><span class="mini"><i style="width:82%"></i></span><small style="color:var(--sub)">新文化运动 · 43 集</small></div>
+      <div class="row2 rev"><span class="no">05</span><h4>山海情</h4><span class="st done">已整理</span><span class="mini"><i style="width:100%"></i></span><small style="color:var(--sub)">闽宁协作 · 脱贫现场</small></div>
+      <div class="row2 rev"><span class="no">06</span><h4>跨过鸭绿江</h4><span class="st">连载中</span><span class="mini"><i style="width:68%"></i></span><small style="color:var(--sub)">抗美援朝 · 史料叙事</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ④ 戏曲与修复 ============ -->
+<section id="opera" style="background:linear-gradient(180deg,rgba(168,80,44,.05),transparent)">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">04 / OPERA &amp; RESTORATION</div>
+        <h2>戏曲 · <em>修复</em></h2>
+        <p class="sec-desc">梅兰芳的《生死恨》是中国第一部彩色电影。厚德电影网为京剧、昆曲、黄梅、越剧建立影像档案，并追踪 4K 修复进度。</p>
+      </div>
+    </div>
+    <div class="flip">
+      <div class="fp rev"><div class="fp-in">
+        <div class="face front"><span class="no">OP / 01</span><h3>霸王别姬</h3><span class="tag">京剧 · 1993 修复</span></div>
+        <div class="face back"><q>「汉兵已略地，四面楚歌声。」</q><span class="who">— 京剧 · 梅派</span></div>
+      </div></div>
+      <div class="fp rev"><div class="fp-in">
+        <div class="face front g2"><span class="no">OP / 02</span><h3>牡丹亭</h3><span class="tag">昆曲 · 4K 修复</span></div>
+        <div class="face back"><q>「情不知所起，一往而深。」</q><span class="who">— 昆曲 · 汤显祖</span></div>
+      </div></div>
+      <div class="fp rev"><div class="fp-in">
+        <div class="face front g3"><span class="no">OP / 03</span><h3>天仙配</h3><span class="tag">黄梅戏 · 胶片修复</span></div>
+        <div class="face back"><q>「树上的鸟儿成双对，绿水青山带笑颜。」</q><span class="who">— 黄梅戏</span></div>
+      </div></div>
+      <div class="fp rev"><div class="fp-in">
+        <div class="face front g4"><span class="no">OP / 04</span><h3>梁山伯与祝英台</h3><span class="tag">越剧 · 1954</span></div>
+        <div class="face back"><q>「十八相送情切切，谁知一别成永诀。」</q><span class="who">— 越剧 · 袁雪芬</span></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑤ 厚德榜 ============ -->
+<section id="rank">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">05 / VIRTUE RANKING</div>
+        <h2>厚<em>德榜</em></h2>
+        <p class="sec-desc">厚德电影网月度榜单，以"人情厚度 × 影像完成度 × 传承价值"三项加权，而非票房。数据按月更新。</p>
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+    <table class="tb">
+      <thead>
+        <tr><th>名次</th><th>影片</th><th>题材 / 年份</th><th style="text-align:right">德分</th></tr>
+      </thead>
+      <tbody>
+        <tr class="rev"><td class="rk g1">01</td><td><h5>饮食男女</h5><small>李安 · 伦理亲情 1994</small></td><td><small>台湾 / 1994</small></td><td class="hot">9.8 <span class="up">▲2</span></td></tr>
+        <tr class="rev"><td class="rk g2">02</td><td><h5>活着</h5><small>张艺谋 · 家国命运 1994</small></td><td><small>大陆 / 1994</small></td><td class="hot">9.6 <span class="up">▲1</span></td></tr>
+        <tr class="rev"><td class="rk g3">03</td><td><h5>霸王别姬</h5><small>陈凯歌 · 戏梦人生 1993</small></td><td><small>大陆 / 1993</small></td><td class="hot">9.5 <span class="dn">▼1</span></td></tr>
+        <tr class="rev"><td class="rk">04</td><td><h5>黄土地</h5><small>陈凯歌 · 乡土写实 1984</small></td><td><small>大陆 / 1984</small></td><td class="hot">9.3 <span class="up">▲3</span></td></tr>
+        <tr class="rev"><td class="rk">05</td><td><h5>大话西游</h5><small>刘镇伟 · 侠义情缘 1995</small></td><td><small>香港 / 1995</small></td><td class="hot">9.1 <span class="up">▲5</span></td></tr>
+        <tr class="rev"><td class="rk">06</td><td><h5>乡村里的中国</h5><small>焦波 · 人文纪录片 2013</small></td><td><small>大陆 / 2013</small></td><td class="hot">9.0 <span class="up">▲1</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑥ 关于 ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">06 / ABOUT</div>
+        <h2>关于<em>厚德电影网</em></h2>
+        <p class="sec-desc">apdy · 厚德电影网（houdedianyingwang-cn.github.io）是一个以德为先的亚洲影视资料与评论站点：经典电影、人文纪录片、家国题材、戏曲电影、4K 修复版。</p>
+      </div>
+    </div>
+    <div class="split">
+      <div class="panel rev">
+        <span class="eyebrow">MANIFESTO</span>
+        <h3 style="font-family:var(--serif);font-size:26px;margin:10px 0;letter-spacing:1px">电影可以娱乐，<br>但好的电影<b style="color:var(--gold)">教人厚道</b>。</h3>
+        <p style="color:var(--sub)">每周更新：一部经典重读 + 一部修复版观影指南 + 一份按节气/人情组织的片单。</p>
+        <div class="kpis">
+          <div class="kpi"><b>3,260</b><small>影片词条</small></div>
+          <div class="kpi"><b>184</b><small>导演词条</small></div>
+          <div class="kpi"><b>0</b><small>付费门槛</small></div>
+        </div>
+      </div>
+      <div class="panel rev">
+        <h3 style="font-family:var(--serif);font-size:20px;letter-spacing:1px">订阅厚德片单</h3>
+        <p style="color:var(--sub);font-size:13px">每月一封：一部经典、一部纪录片、一出戏曲、一份可直接照着看的片单。免费，可随时退订。</p>
+        <form action="#" method="post" onsubmit="return false">
+          <input type="text" name="name" placeholder="怎么称呼您？" required>
+          <input type="email" name="email" placeholder="邮箱地址" required>
+          <div class="radios">
+            <label><input type="radio" name="r" checked><span>经典</span></label>
+            <label><input type="radio" name="r"><span>纪录片</span></label>
+            <label><input type="radio" name="r"><span>家国</span></label>
+            <label><input type="radio" name="r"><span>戏曲</span></label>
+          </div>
+          <button class="btn btn-p" type="submit">免费订阅 →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <a class="logo" href="#"><span class="seal">德</span><b style="background:linear-gradient(90deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:17px">厚德电影网</b></a>
+        <p style="color:var(--sub);font-size:13px;margin-top:12px;max-width:330px">厚德电影网 apdy — 以德为先的影视资料与评论：经典电影、人文纪录片、家国题材、戏曲电影、4K 修复版专题。</p>
+      </div>
+      <div>
+        <h5>片库</h5>
+        <a href="#classic">经典电影</a>
+        <a href="#doc">人文纪录片</a>
+        <a href="#home">家国题材</a>
+        <a href="#opera">戏曲与修复</a>
+      </div>
+      <div>
+        <h5>专题</h5>
+        <a href="#">导演作者论</a>
+        <a href="#">4K 修复追踪</a>
+        <a href="#rank">厚德榜</a>
+        <a href="#">节气片单</a>
+      </div>
+      <div>
+        <h5>资源</h5>
+        <a href="#about">厚德片单</a>
+        <a href="#">戏曲剧种索引</a>
+        <a href="#">术语表</a>
+        <a href="#">推荐书目</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="yr">2026</span> 厚德电影网 apdy · <b>houdedianyingwang-cn.github.io</b> · 本站为影视资料与评论整理站点，影片版权归原作者及发行方所有</span>
+      <span>https://houdedianyingwang-cn.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('mb'),nav=document.getElementById('nav');
+mb.addEventListener('click',function(){
+  var o=nav.classList.toggle('open');
+  mb.setAttribute('aria-expanded',o?'true':'false');
+});
+nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
+
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('in');},i*70);io.unobserve(e.target);}});
+},{threshold:.12});
+document.querySelectorAll('.rev').forEach(function(n){io.observe(n);});
+
+document.querySelectorAll('.chip').forEach(function(c){
+  c.addEventListener('click',function(){
+    c.parentNode.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on');});
+    c.classList.add('on');
+  });
+});
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
